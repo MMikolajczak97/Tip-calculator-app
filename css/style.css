@@ -76,7 +76,7 @@ html {
 .bill__input {
   display: block;
   width: 100%;
-  background-image: url("../../../images/icon-dollar.svg");
+  background-image: url("/images/icon-dollar.svg");
   background-repeat: no-repeat;
   background-position-y: center;
   background-position-x: 0.75em;
@@ -110,7 +110,7 @@ html {
   display: block;
   width: 100%;
   margin-top: 0.3em;
-  background-image: url("../../../images/icon-person.svg");
+  background-image: url("/images/icon-person.svg");
   background-repeat: no-repeat;
   background-position-y: center;
   background-position-x: 0.75em;
