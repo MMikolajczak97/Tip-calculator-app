@@ -1,0 +1,12 @@
+@mixin summary-desktop {
+    .summary {
+        margin-top: 0;
+
+        padding: {
+            top: 3em;
+            bottom: 2em;
+            left: 2em;
+            right: 2em;
+        }
+    }
+}

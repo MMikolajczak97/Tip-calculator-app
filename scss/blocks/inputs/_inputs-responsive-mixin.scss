@@ -1,0 +1,9 @@
+@mixin inputs-desktop {
+    .inputs {
+        padding: {
+            top: 1em;
+            bottom: 1em;
+            left: .5em;
+        }
+    }
+}

@@ -1,0 +1,11 @@
+@use './blocks/container/container-responsive-mixin'as container-rm;
+@use './blocks/summary/summary-responsive-mixin'as summary-rm;
+@use './blocks/tipping/tipping-responsive-mixin'as tipping-rm;
+@use './blocks/inputs/inputs-responsive-mixin'as inputs-rm;
+
+@media (min-width: 1440px) {
+    @include container-rm.container-desktop();
+    @include summary-rm.summary-desktop();
+    @include tipping-rm.tipping-desktop();
+    @include inputs-rm.inputs-desktop();
+}

@@ -1,0 +1,43 @@
+@use '../../variables'as v;
+
+.input {
+    font-size: 1.5em;
+    font-weight: 700;
+
+    font-family: v.$fontFamily;
+    caret-color: v.$strongCyan;
+    color: v.$veryDarkCyan;
+
+    appearance: text;
+    -moz-appearance: textfield;
+
+
+    border: none;
+    border-radius: 4px;
+
+    text-align: right;
+
+    background: {
+        color: v.$lightGrayishCyan2;
+    }
+
+    padding: {
+        top: .25em;
+        bottom: .25em;
+        right: .75em;
+    }
+
+    &:focus {
+        outline: 2px solid v.$strongCyan;
+    }
+
+    &--error {
+        outline: 2px solid v.$error;
+
+        &:focus {
+            outline: 2px solid v.$error;
+        }
+    }
+
+
+}

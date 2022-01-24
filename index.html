@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32">
+    <title>Tip calculator</title>
+</head>
+
+<body class="page">
+    <img src="images/logo.svg" alt="Splitter logo">
+    <div class="container">
+        <h1 class="sr-only">Tip calculator</h1>
+        <div class="inputs">
+            <div class="bill">
+                <label class="label label--grayishCyan">Bill</label>
+                <input type="number" class="input bill__input" placeholder="0">
+            </div>
+            <div class="tipping">
+                <h2 class="label label--grayishCyan tipping__label">Select Tip %</h2>
+                <div class="tipping__percents">
+                    <button type="button" class="tipping__button">5%</button>
+                    <button type="button" class="tipping__button">10%</button>
+                    <button type="button" class="tipping__button">15%</button>
+                    <button type="button" class="tipping__button">25%</button>
+                    <button type="button" class="tipping__button">50%</button>
+                    <input type="number" placeholder="Custom" class="input tipping__custom">
+                </div>
+            </div>
+            <div class="people">
+                <label class="label label--grayishCyan people__label">Number of People</label>
+                <input type="number" class="input people__input" placeholder="0">
+            </div>
+        </div>
+        <div class="summary">
+            <div class="counters">
+                <div class="counters__label">
+                    <h2 class="label label--white">Tip Amount</h2>
+                    <h3 class="label label--grayishCyan2 label--smaller">/ person</h3>
+                </div>
+                <p class="counters__counter" id="tipAmount">0.00</p>
+                <div class="counters__label">
+                    <h2 class="label label--white">Total</h2>
+                    <h3 class="label label--grayishCyan2 label--smaller">/ person</h3>
+                </div>
+                <p class="counters__counter" id="total">0.00</p>
+            </div>
+            <button type="button" class="button">RESET</button>
+        </div>
+
+    </div>
+
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

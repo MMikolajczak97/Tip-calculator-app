@@ -1,0 +1,17 @@
+@use '../../variables'as v;
+
+.people {
+
+    &__input {
+        display: block;
+        width: 100%;
+        margin-top: .3em;
+
+        background: {
+            image: url('../../../images/icon-person.svg');
+            repeat: no-repeat;
+            position-y: center;
+            position-x: .75em;
+        }
+    }
+}

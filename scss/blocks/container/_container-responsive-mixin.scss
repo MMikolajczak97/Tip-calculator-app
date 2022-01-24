@@ -1,0 +1,14 @@
+@mixin container-desktop {
+    .container {
+        grid: {
+            auto-flow: column;
+            auto-columns: 1fr;
+            gap: 45px;
+        }
+
+        padding-left: 2.5rem;
+
+        width: 920px;
+
+    }
+}

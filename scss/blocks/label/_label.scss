@@ -1,0 +1,33 @@
+@use '../../variables'as v;
+
+.label {
+
+    font-size: 1em;
+    font-weight: 700;
+
+    &--smaller {
+        font-size: 0.8em;
+    }
+
+
+    &--grayishCyan {
+        color: v.$darkGrayishCyan;
+    }
+
+    &--grayishCyan2 {
+        color: v.$darkGrayishCyan2;
+    }
+
+    &--white {
+        color: v.$white;
+    }
+
+    &--error {
+        &::after {
+            content: "Can't be zero";
+            float: right;
+            color: v.$error;
+        }
+    }
+
+}

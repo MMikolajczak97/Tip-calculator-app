@@ -1,0 +1,20 @@
+@use '../../variables'as v;
+
+.summary {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: v.$veryDarkCyan;
+    border-radius: 15px;
+
+    margin-top: 2.5em;
+
+    padding: {
+        top: 2.5em;
+        bottom: 1.5em;
+        left: 1.4em;
+        right: 1.4em;
+    }
+
+
+}

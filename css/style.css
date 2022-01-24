@@ -1,0 +1,226 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Space Mono", monospace;
+}
+
+.sr-only {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.page {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #c5e4e7;
+}
+
+.container {
+  display: grid;
+  grid-auto-flow: row;
+  background-color: white;
+  border-radius: 20px;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  width: 375px;
+}
+
+.tipping {
+  margin-top: 2.5em;
+  margin-bottom: 2.5em;
+}
+.tipping__label {
+  margin-bottom: 1em;
+}
+.tipping__percents {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-gap: 15px;
+}
+.tipping__button {
+  border: none;
+  border-radius: 7px;
+  background-color: #00494d;
+  color: white;
+  font-size: 1.5em;
+  font-weight: 700;
+  font-family: "Space Mono", monospace;
+  padding-top: 0.25em;
+  padding-bottom: 0.25em;
+}
+.tipping__button--active {
+  background-color: #26c0ab;
+  color: #00494d;
+}
+.tipping__button:active {
+  background-color: #aaeee5;
+  color: #00494d;
+}
+.tipping__custom {
+  padding-left: 0.75em;
+}
+
+.bill__input {
+  display: block;
+  width: 100%;
+  background-image: url("../../../images/icon-dollar.svg");
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: 0.75em;
+  padding-left: 1.5em;
+  margin-top: 0.3em;
+}
+
+.label {
+  font-size: 1em;
+  font-weight: 700;
+}
+.label--smaller {
+  font-size: 0.8em;
+}
+.label--grayishCyan {
+  color: #5e7a7d;
+}
+.label--grayishCyan2 {
+  color: #7f9c9f;
+}
+.label--white {
+  color: white;
+}
+.label--error::after {
+  content: "Can't be zero";
+  float: right;
+  color: #d08801;
+}
+
+.people__input {
+  display: block;
+  width: 100%;
+  margin-top: 0.3em;
+  background-image: url("../../../images/icon-person.svg");
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: 0.75em;
+}
+
+.input {
+  font-size: 1.5em;
+  font-weight: 700;
+  font-family: "Space Mono", monospace;
+  caret-color: #26c0ab;
+  color: #00494d;
+  appearance: text;
+  -moz-appearance: textfield;
+  border: none;
+  border-radius: 4px;
+  text-align: right;
+  background-color: #f4fafa;
+  padding-top: 0.25em;
+  padding-bottom: 0.25em;
+  padding-right: 0.75em;
+}
+.input:focus {
+  outline: 2px solid #26c0ab;
+}
+.input--error {
+  outline: 2px solid #d08801;
+}
+.input--error:focus {
+  outline: 2px solid #d08801;
+}
+
+.counters {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-row-gap: 20px;
+}
+.counters__counter {
+  color: #26c0ab;
+  font-size: 2.5em;
+  font-weight: 700;
+  text-align: right;
+}
+.counters__counter::before {
+  content: "$";
+}
+.counters__label {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.summary {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #00494d;
+  border-radius: 15px;
+  margin-top: 2.5em;
+  padding-top: 2.5em;
+  padding-bottom: 1.5em;
+  padding-left: 1.4em;
+  padding-right: 1.4em;
+}
+
+.button {
+  width: 100%;
+  border: none;
+  border-radius: 7px;
+  font-size: 1.2em;
+  font-weight: 700;
+  font-family: "Space Mono", monospace;
+  background-color: #26c0ab;
+  color: #00494d;
+  padding-top: 0.45em;
+  padding-bottom: 0.45em;
+}
+.button--disabled {
+  background-color: #aaeee5;
+  opacity: 20%;
+}
+.button:active {
+  background-color: #aaeee5;
+}
+
+@media (min-width: 1440px) {
+  .container {
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+    grid-gap: 45px;
+    padding-left: 2.5rem;
+    width: 920px;
+  }
+
+  .summary {
+    margin-top: 0;
+    padding-top: 3em;
+    padding-bottom: 2em;
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+
+  .tipping__percents {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .inputs {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 0.5em;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

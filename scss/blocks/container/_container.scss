@@ -1,0 +1,17 @@
+@use '../../variables'as v;
+
+.container {
+    display: grid;
+    grid-auto-flow: row;
+    background-color: v.$white;
+    border-radius: 20px;
+
+    padding: {
+        top: 2rem;
+        bottom: 2rem;
+        left: 1.5rem;
+        right: 1.5rem;
+    }
+
+    width: 375px;
+}

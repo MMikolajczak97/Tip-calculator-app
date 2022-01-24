@@ -1,0 +1,30 @@
+@use '../../variables'as v;
+
+.button {
+
+    width: 100%;
+    border: none;
+    border-radius: 7px;
+    font-size: 1.2em;
+    font-weight: 700;
+    font-family: v.$fontFamily;
+    background-color: v.$strongCyan;
+    color: v.$veryDarkCyan;
+
+
+    padding: {
+        top: .45em;
+        bottom: .45em;
+    }
+
+
+    &--disabled {
+        background-color: v.$strongCyanActive;
+        opacity: 20%;
+    }
+
+    &:active {
+        background-color: v.$strongCyanActive;
+    }
+
+}
